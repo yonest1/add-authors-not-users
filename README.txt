@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 === Add Authors Not Users ===
 Contributors: heyyonatan
 Donate link: http://addusersnotauthors.com
 Tags: authors, guest author, guest post, author widget, author box, author plugin
+=======
+=== Plugin Name ===
+Contributors: Yonatan E
+Tags: comments, spam
+>>>>>>> a2666de37d55dc3e24c2b0c8751d96efb99ed9c0
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+<<<<<<< HEAD
 "Add Authors Not Users" adds author names to posts and pages without adding them as authors or users on the site.
 
 == Description ==
@@ -47,3 +54,7 @@ Yes, it will appear in the user's archive but the name will be the guest author'
 
 = 1.0 =
 * Launch. May the wordpress force be with you.
+=======
+Add a guest author name without needing to register a new user.
+This plugin adds a metabox in post dashboard with a guest author name field. 
+>>>>>>> a2666de37d55dc3e24c2b0c8751d96efb99ed9c0
