@@ -1,10 +1,6 @@
 <?php
 
 /**
- * The file that defines the core plugin class
- *
- * A class definition that includes attributes and functions used across both the
- * public-facing side of the site and the admin area.
  *
  * @link       http://addusersnotauthors.com
  * @since      1.0.0
@@ -14,13 +10,6 @@
  */
 
 /**
- * The core plugin class.
- *
- * This is used to define internationalization, admin-specific hooks, and
- * public-facing site hooks.
- *
- * Also maintains the unique identifier of this plugin as well as the current
- * version of the plugin.
  *
  * @since      1.0.0
  * @package    Add_Authors_Not_Users
@@ -30,8 +19,6 @@
 class Add_Authors_Not_Users {
 
 	/**
-	 * The loader that's responsible for maintaining and registering all hooks that power
-	 * the plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   protected
@@ -60,9 +47,6 @@ class Add_Authors_Not_Users {
 	/**
 	 * Define the core functionality of the plugin.
 	 *
-	 * Set the plugin name and the plugin version that can be used throughout the plugin.
-	 * Load the dependencies, define the locale, and set the hooks for the admin area and
-	 * the public-facing side of the site.
 	 *
 	 * @since    1.0.0
 	 */
@@ -84,42 +68,22 @@ class Add_Authors_Not_Users {
 	/**
 	 * Load the required dependencies for this plugin.
 	 *
-	 * Include the following files that make up the plugin:
-	 *
-	 * - Add_Authors_Not_Users_Loader. Orchestrates the hooks of the plugin.
-	 * - Add_Authors_Not_Users_i18n. Defines internationalization functionality.
-	 * - Add_Authors_Not_Users_Admin. Defines all hooks for the admin area.
-	 * - Add_Authors_Not_Users_Public. Defines all hooks for the public side of the site.
-	 *
-	 * Create an instance of the loader which will be used to register the hooks
-	 * with WordPress.
 	 *
 	 * @since    1.0.0
 	 * @access   private
 	 */
 	private function load_dependencies() {
 
-		/**
-		 * The class responsible for orchestrating the actions and filters of the
-		 * core plugin.
-		 */
+
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-add-authors-not-users-loader.php';
 
-		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
+
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-add-authors-not-users-i18n.php';
 
-		/**
-		 * The class responsible for defining all actions that occur in the admin area.
-		 */
+
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-add-authors-not-users-admin.php';
 
-		/**
-		 * The class responsible for defining all actions that occur in the public-facing
-		 * side of the site.
-		 */
+
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-add-authors-not-users-public.php';
 
 		$this->loader = new Add_Authors_Not_Users_Loader();
@@ -129,8 +93,6 @@ class Add_Authors_Not_Users {
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Add_Authors_Not_Users_i18n class in order to set the domain and to register the hook
-	 * with WordPress.
 	 *
 	 * @since    1.0.0
 	 * @access   private

@@ -15,19 +15,6 @@
 
 <?php
 
-/**
- * Provide a review metabox
- *
- * This file is used to markup the admin-facing aspects of the plugin.
- *
- * @link       http://example.com
- * @since      1.0.0
- *
- * @package    BDS_Reviews
- * @subpackage BDS_Reviews/admin/partials
- */
-
-// This file should primarily consist of HTML with a little bit of PHP. 
 
 global $post;
 

@@ -1,7 +1,6 @@
 <?php
 
 /**
- * The public-facing functionality of the plugin.
  *
  * @link       http://addusersnotauthors.com
  * @since      1.0.0
@@ -11,8 +10,6 @@
  */
 
 /**
- * The public-facing functionality of the plugin.
- *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
@@ -61,17 +58,6 @@ class Add_Authors_Not_Users_Public {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Add_Authors_Not_Users_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Add_Authors_Not_Users_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/add-authors-not-users-public.css', array(), $this->version, 'all' );
 
@@ -84,17 +70,6 @@ class Add_Authors_Not_Users_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Add_Authors_Not_Users_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Add_Authors_Not_Users_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/add-authors-not-users-public.js', array( 'jquery' ), $this->version, false );
 
